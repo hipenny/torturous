@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Torturous Tic Tac Toe</title>
+  <link rel="stylesheet" href="game.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Torturous Tic Tac Toe</h1>
+    <div id="start-screen">
+      <p>Three in a row. Sounds easy. Go on, then.</p>
+      <button id="start" type="button">Start</button>
+    </div>
+    <div id="game-screen" hidden>
+      <p id="status" role="status">X’s turn</p>
+      <div class="play-area">
+        <div class="board" role="group" aria-label="Game board"></div>
+        <div id="wheel-panel" role="group" aria-label="Spin the wheel" hidden>
+          <div class="wheel-frame">
+            <div id="wheel" role="list" aria-label="Wheel options"></div>
+            <button id="spin" type="button">Spin</button>
+          </div>
+        </div>
+      </div>
+      <p id="spin-results" role="status"></p>
+      <button id="restart" type="button">Restart game</button>
+      <p id="game-message" role="status"></p>
+    </div>
+    <button id="music-toggle" type="button" aria-label="Music" aria-pressed="true">Music on</button>
+    <audio id="countdown-music" src="countdown.wav?v=2" preload="auto" loop></audio>
+  </main>
+</body>
+</html>
